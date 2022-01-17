@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function msg(){
+                var num,sq;
+                num=document.f1.n1.value;
+                sq=num*num;
+                document.getElementById("result").innerHTML=sq;
+                alert("square="+sq);
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align=center>Mkps solutions</h1>
+        <hr>
+        <center>
+        <form name="f1" style="width: 50%;">
+            <fieldset>
+                <legend>Calculations</legend>
+                enter no<input type=text name="n1"/>
+                <br><br>
+
+                <input type="button" value="click me" onclick="msg();"/>
+
+                   <br><br>
+
+                   square : <span id="result" name="result" ></span>
+            </fieldset>
+        
+        </form>
+    </body>
+</html>
