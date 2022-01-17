@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function msg(){
+                var num1,num2,result;
+num1=parseFloat(document.f1.n1.value);//parseInt function is used to convert string into integer
+num2=parseFloat(document.f1.n2.value);
+result=num1+num2;
+document.getElementById("result").innerHTML=result;
+
+
+               
+                
+
+            }
+        </script>
+    </head>
+<body>
+    <h1 align=center>mkps solutions</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width: 50%;">
+        <fieldset>
+            <legend>calculation</legend>
+            enter number<input type= text name="n1"/>
+            <br><br>
+             enter number<input type= text name="n2"/>
+             <br><br>
+             enter number<input type= text name="n3"/>
+             <br><br>
+             <input type="button" value="Additions" onclick="msg();"/>
+             <br><br>
+             square: <span id="result" name="result"></span>
+        </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>
